@@ -22,3 +22,26 @@ class Solution:
 
         insert_(root, val)
         return root if root else TreeNode(val)
+'''
+    2020-10-06
+    class Solution:
+        def insertIntoBST(self, root: TreeNode, val: int) -> TreeNode:
+            def go(root, val, head = None):
+                if not root:
+                    if head.val > val:
+                        head.left = TreeNode(val)
+                    else:
+                        head.right = TreeNode(val)
+                    return
+                if root.val > val:
+                    go(root.left, val, root)
+                else:
+                    go(root.right, val, root)
+
+            if root:
+                go(root, val)
+            else:
+                root = TreeNode(val)
+
+        return root
+    '''
