@@ -1,1 +1,2 @@
-print(float('-inf') > 1)
+i = [1, 2, 3]
+print(i[2: -1])
