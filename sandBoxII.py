@@ -1,3 +1,3 @@
-i = [1,2,1]
-i.remove(1)
-print(i)
+i = '07,25'
+j = '20,18'
+print(i > j)
